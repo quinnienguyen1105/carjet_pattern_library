@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyright" content="Copyright (c) 2022 UI Group 4">
+    <meta name="author" content="Group 4">
+    <meta name="keywords"
+        content="html5, semantic tags, CSS3, responsive layout, JS, JS+DOM, JS events, Bootstrap, mobile first">
+    <meta name="description" content="Index page for UI project IWD2 Fanshawe course Fall 2022">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Dancing+Script:wght@400;700&family=Markazi+Text&family=Sacramento&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./project.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <title>CanJet Pattern Library</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <span class="navbar-brand" href="#"><img src="./logo.png" alt="company logo"> CanJet Pattern
+                    Library</span>
+
+                <button type="button" id="sidebarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+
+        <div class="wrapper col-sm-12 col-md-2">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+
+                <ul class="list-unstyled components">
+                    <li><a href="#homeSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed">Guidelines</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" role="button" id="v-pills-colors-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-colors" role="tab" aria-controls="v-pills-colors"
+                                    aria-selected="true">Colour</a>
+                                <a class="nav-link" role="button" id="v-pills-layout-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-layout" type="button" role="tab"
+                                    aria-controls="v-pills-layout" aria-selected="false">Page Layout</a>
+                                <a class="nav-link" role="button" id="v-pills-typography-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-typography" type="button" role="tab"
+                                    aria-controls="v-pills-typography" aria-selected="false">Typography</a>
+                                <a class="nav-link" role="button" id="v-pills-visualization-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-visualization" type="button" role="tab"
+                                    aria-controls="v-pills-visualization" aria-selected="false">Data Visualization</a>
+                            </div>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#pageSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Components</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link" role="button" id="v-pills-navigation-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation"
+                                    aria-selected="false">Navigation</a>
+                                <a class="nav-link" role="button" id="v-pills-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills" type="button" role="tab" aria-controls="v-pills"
+                                    aria-selected="false">Tabs</a>
+                                <a class="nav-link" role="button" id="v-pills-button-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-button" type="button" role="tab"
+                                    aria-controls="v-pills-button" aria-selected="false">Buttons</a>
+                                <a class="nav-link" role="button" id="v-pills-select-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-select" type="button" role="tab"
+                                    aria-controls="v-pills-select" aria-selected="false">Select</a>
+                                <a class="nav-link" role="button" id="v-pills-list-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-list" type="button" role="tab" aria-controls="v-pills-list"
+                                    aria-selected="false">Lists</a>
+                                <a class="nav-link" role="button" id="v-pills-images-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-images" type="button" role="tab"
+                                    aria-controls="v-pills-images" aria-selected="false">Images</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!-- CONTENT EDITING STARTS HERE !!!  -->
+        <!-- INSERT YOUR CODE IN APPROPRIATE DIV -->
+
+
+
+
+        <div class="tab-content bd-content col-sm-12 col-md-10" id="v-pills-tabContent">
+
+            <!-- COLOR PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4 show active" id="v-pills-colors" role="tabpanel"
+                aria-labelledby="v-pills-colors-tab">
+
+                <h1 class="textHeading1">Colour</h1>
+                <!--BRAND-->
+
+                <div class="container colors-container">
+                    <h2 class="textHeading2">Brand Colour/Primary Colour</h2>
+                    <div class="row">
+                        <div class="col-sm-6 colorCanJetRed circleFigure"></div>
+                        <div class="col colDesc">
+                            <span class="desc">
+                                CanJet Red <br />
+                                .colorCanJetRed <br />
+                                #ED1C24
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--SECOND-->
+                <div class="container colors-container">
+                    <h2 class="textHeading2">Secondary Colours</h2>
+                    <div class="row">
+                        <div class="col-sm-4 colorOrange circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Orange <br />
+                                .colorOrange <br />
+                                #EC9A29
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorSteelBlue circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Steel Blue <br />
+                                .colorSteelBlue <br />
+                                #477CB2
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorMaroon circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Maroon <br />
+                                .colorMaroon <br />
+                                #821214
+                            </span>
+                        </div>
+                        <div class="col-sm-6 colorSapphire circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Blue Sapphire <br />
+                                .colorSapphire <br />
+                                #106184
+                            </span>
+                        </div>
+                        <div class="col-sm-6 colorGoldenBrown circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Golden Brown <br />
+                                .colorGoldenBrown <br />
+                                #A76A23
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--FEEDBACK-->
+                <div class="container colors-container">
+                    <h2 class="textHeading2">Feedback Colours</h2>
+                    <div class="row">
+                        <div class="col-sm-4 colorPalePink circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Pale Pink <br />
+                                .colorPalePink <br />
+                                #FBDADC
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorBeauBlue circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Beau Blue <br />
+                                .colorBeauBlue <br />
+                                #D5E8FC
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorCultured circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Cultured <br />
+                                .colorCultured <br />
+                                #F2F2F4
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--FUNCTIONAL-->
+                <div class="container colors-container">
+                    <h2 class="textHeading2">Functional Colours</h2>
+                    <div class="row">
+                        <div class="col-sm-4 colorBlack circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Black <br />
+                                .colorBlack <br />
+                                #000000
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorGrey circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Grey <br />
+                                .colorgrey <br />
+                                #707070
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorWhite circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                White <br />
+                                .colorWhite <br />
+                                #FFFFFF
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Neutral-->
+                <div class="container colors-container">
+                    <h2 class="textHeading2">Neutral Colours</h2>
+                    <div class="row">
+                        <div class="col-sm-4 colorBlack circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Black <br />
+                                .colorBlack <br />
+                                #000000
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorGrey circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                Grey <br />
+                                .colorGrey <br />
+                                #707070
+                            </span>
+                        </div>
+                        <div class="col-sm-4 colorWhite circleFigure"></div>
+                        <div class="col-sm-2 colDesc">
+                            <span class="desc">
+                                White <br />
+                                .colorWhite <br />
+                                #FFFFFF
+                            </span>
+                        </div>
+                        <div class="col-sm-12 colorCultured circleFigure"></div>
+                        <div class="col-sm colDesc">
+                            <span class="desc">
+                                Cultured <br />
+                                .colorCultured <br />
+                                #F2F2F4
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PAGE LAYOUT-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                <h1 class="textHeading1">Page Layout</h1>
+
+                <p class="textBody">
+                    Our Grid-containers do not have round borders, possible to add up to 8 boxes <br />
+                    and only 2px delimiter border to be able to define objects.
+                </p>
+                <br />
+                <p class="textBodyBold">Size 1 of 1</p>
+                <!--GRID CONTAINERS-->
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col">1/1</div>
+                    </div>
+                </div>
+
+                <p class="textBodyBold">Size 1 of 2</p>
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-6 col-border">1/2</div>
+                        <div class="col-6">1/2</div>
+                    </div>
+                </div>
+
+                <p class="textBodyBold">Size 1 of 3</p>
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-4 col-border">1/3</div>
+                        <div class="col-4 col-border">1/3</div>
+                        <div class="col-4">1/3</div>
+                    </div>
+                </div>
+
+                <p class="textBodyBold">Size 1 of 4</p>
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-3 col-border">1/4</div>
+                        <div class="col-3 col-border">1/4</div>
+                        <div class="col-3 col-border">1/4</div>
+                        <div class="col-3">1/4</div>
+                    </div>
+                </div>
+
+                <p class="textBodyBold">Size 1 of 8</p>
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col col-border">1/8</div>
+                        <div class="col">1/8</div>
+                    </div>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="grid" class="btn-clipboard" 
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+            
+    <pre tabindex="0" class="chroma code-container" >
+        <code class="language-html" data-lang="html" data-id="grid">
+        <span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container text-center"</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-6"</span><span class="p">&gt;</span></span></span>
+        </span></span><span class="line"><span class="cl">      Column
+        </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-6"</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl">      Column
+        </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code>
+    </pre>
+
+                <!--END GRID SIZES-->
+                <!--START GRID MIXING-->
+                <h2 class="textHeading2">Grid Mixing</h2>
+
+                <p class="textBody">
+                    Grid-containers can be mixed in combination of different sizes.
+                </p>
+
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-md-10 col-border">7/8</div>
+                        <div class="col-md">1/8</div>
+                    </div>
+                </div>
+
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-md-4 col-border">1/4</div>
+                        <div class="col-md-8">3/4</div>
+                    </div>
+                </div>
+
+                <div class="container text-center container-grid">
+                    <div class="row">
+                        <div class="col-md-2 col-border">1/8</div>
+                        <div class="col-md-4 col-border">3/8</div>
+                        <div class="col-md-2 col-border">1/8</div>
+                        <div class="col-md-4">3/8</div>
+                    </div>
+                </div>
+
+                <h2 class="textHeading2">Responsive Solution</h2>
+
+                <p class="textBody">
+                    We have a breakpoint at <span class="textBodyBold">768px</span>, for better browsing experience of our users.<br>
+                    When screen width is smaller than 768px, the following CSS code will apply:<br> 
+
+                </p>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="responsive"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+            </div>
+    <pre tabindex="0" class="chroma code-container" >
+        <code class="language-html" data-lang="html" data-id="responsive">
+        </span></span><span class="line"><span class="cl"> <span class="nt">@media </span><span class="p">&#40;</span><span class="na">max-width</span><span class="o">: </span><span class="s">768px</span><span class="p">&#41;</span><span class="p">&#123;</span>
+             </span></span><span class="line"><span class="cl"> <span class="p">.navbar-light .navbar-brand</span><span class="p">&#123;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">font-size</span><span class="o">:</span><span class="s">1.5rem;</span>
+                    </span></span><span class="line"><span class="cl"><span class="p">&#125;</span>
+        
+             </span></span><span class="line"><span class="cl"> <span class="p">#sidebar </span><span class="p">&#123;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">width</span><span class="o">: </span><span class="s">100%;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">margin-left</span><span class="o">: </span><span class="s">0;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">position</span><span class="o">: </span><span class="s">absolute;</span>
+                    </span></span><span class="line"><span class="cl"><span class="p">&#125;</span>
+
+             </span></span><span class="line"><span class="cl"> <span class="p">#sidebar.active </span><span class="p">&#123;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">margin-left</span><span class="o">: </span><span class="s">-100%;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">max-width</span><span class="o">: </span><span class="s">100%;</span>
+                    </span></span><span class="line"><span class="cl"><span class="na">width</span><span class="o">: </span><span class="s">100%;</span>
+                    </span></span><span class="line"><span class="cl"><span class="p">&#125;</span>
+               </span></span><span class="line"><span class="cl"><span class="p">&#125;</span>
+        </code>
+    </pre>
+
+            </div>
+
+            <!-- FONT PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-typography" role="tabpanel"
+                aria-labelledby="v-pills-typography-tab">
+                <h1 class="textHeading1">Typography</h1>
+                <!--TypeFace-->
+               
+                <h2 class="textHeading2">Typeface</h2>
+
+                <h1 class="textHeading1">This is Dancing Script. <br>Our typeface.</h1>
+
+                <h2 class="textHeading2">Type Scale</h2>
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <h1 class="textHeading1">Heading One</h1>
+                            </th>
+                            <!-- <th class="textHeading1">Heading One</th>  -->
+                            <th class="textBody">60px</th>
+                            <th class="textBody">Dancing Script</th>
+                            <th class="textBody">.textHeading1</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <h2 class="textHeading2">Heading Two</h2>
+                            </th>
+                            <th class="textBody">40px</th>
+                            <th class="textBody">Barlow Condensed - Regular</th>
+                            <th class="textBody">.textHeading2</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th class="textBody">Body</th>
+                            <th class="textBody">20px</th>
+                            <th class="textBody">Barlow Condensed - Regular</th>
+                            <th class="textBody">.textBody</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th class="textBodyBold">Body Bold</th>
+                            <th class="textBody">20px</th>
+                            <th class="textBody">Barlow Condensed - Bold</th>
+                            <th class="textBody">.textBodyBold</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th class="textChart">Charts</th>
+                            <th class="textBody">20px</th>
+                            <th class="textBody">Markazi Text - Regular</th>
+                            <th class="textBody">.textChart</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th class="textMenu">Menu</th>
+                            <th class="textBody">40px</th>
+                            <th class="textBody">Dancing Script</th>
+                            <th class="textBody">.textMenu</th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="textHeading2">Paragraphs</h2>
+                <p class="textBody">
+                    The default body text is 20px. For optimum reading length the
+                    paragraph width is capped at 800px.
+                </p>
+
+                <h2 class="textHeading2">Symbols</h2>
+                <p class="textBody" style="color: red">@ { & * " #</p>
+                <p class="textBody">
+                    1. When we need to include trademark or other symbols into copy,
+                    include the symbol without the &ltsup&gt tag.<br />
+                    2. When selecting a symbol as part of your design, make sure the
+                    element enhances the idea and is in harmony with copy within the
+                    asset.<br /><br />
+                    For example:<br />
+                    - Use the number symbol to talk about a new campaign and/or promore a
+                    hashtag.<br />
+                    - Use the forward slash symbol when talking about a new webpage or a
+                    link.
+                </p>
+            </div>
+
+            <!-- DATA VISUALIZATION PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-visualization" role="tabpanel"
+                aria-labelledby="v-pills-visualization-tab">
+                <h1 class="textHeading1">
+                    Data Visualization
+                </h1>
+                <!-- Line Graph-->
+                <h2 class="chartStyleName textHeading2">Line Graphs</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/1.jpeg" alt="Line Graph Normal"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Stacked</p>
+                        <div class="imgWrap"><img src="./pics/2.jpeg" alt="Line Graph Stacked"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                </div>
+                <!-- Bar Graph-->
+                <h2 class="chartStyleName textHeading2">Bar Graphs</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/3.jpeg" alt="Bar Graph Normal"
+                                style="width:auto; height: 350px;">
+                        </div>
+                    </div>
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Stacked</p>
+                        <div class="imgWrap"><img src="./pics/4.jpeg" alt="Bar Graph Stacked"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Horizontal</p>
+                        <div class="imgWrap"><img src="./pics/5.jpeg" alt="Bar Graph Horizontal"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                </div>
+                <!-- Area Chart-->
+                <h2 class="chartStyleName textHeading2">Area Charts</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/6.jpeg" alt="Area Charts Normal"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Stacked</p>
+                        <div class="imgWrap"><img src="./pics/7.jpeg" alt="Area Charts Stacked"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                </div>
+                <!-- Scatter Plot-->
+                <h2 class="chartStyleName textHeading2">Scatter Plot</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/8.jpeg" alt="Scatter Plot"
+                                style="width:auto; height: 350px;">
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie Chart-->
+                <h2 class="chartStyleName textHeading2">Pie Chart</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/9.jpeg" alt="Pie Chart"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                </div>
+                <!-- Donut Chart-->
+                <h2 class="chartStyleName textHeading2">Donut Chart</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Normal</p>
+                        <div class="imgWrap"><img src="./pics/10.jpeg" alt="Donut Chart"
+                                style="width:auto; height: 350px;">
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Value Charts-->
+                <h2 class="chartStyleName textHeading2">Single Value Charts</h2>
+                <div class="chartStyleDiv">
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Numbers</p>
+                        <div class="imgWrap"><img src="./pics/11.jpeg" alt="Single Value Charts of Numbers"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                    <div class="chartCard">
+                        <p class="chartSubName textBody">Progress</p>
+                        <div class="imgWrap"><img src="./pics/12.jpeg" alt="Single Value Charts of Progress"
+                                style="width:auto; height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div
+            class="tab-pane fade"
+            id="v-pills-navigation"
+            role="tabpanel"
+            aria-labelledby="v-pills-navigation-tab"
+          >
+          <h1 class="textHeading1">
+            Navigation
+        </h1>
+
+        <h2 class="textHeading2" style="margin-top: 30px;">Basic Menu</h2>
+
+          <p class="textBody">This is a basic menu layout.</p>
+
+          <div class="menuContainer">
+            <ul>
+              <img src="./logo.png" alt="CanJet Logo">
+              <a href="#" class="textMenu">Home</a>
+              <a href="#" class="textMenu">Data</a>
+              <a href="#" class="textMenu">Contact Us</a>
+            </ul>
+          </div>
+
+
+<div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="main-nav"
+    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+</div>
+<pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="main-nav">
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">"page"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Data<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Contact Us<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    </code>
+                </pre>
+
+
+
+  
+
+<h2 class="textHeading2">Secondary Menu</h2>
+                
+                <p class="bd-lead">This is a secondary menu layout which shows the contact button on the far right side of the webpage</p>
+
+                <div class="menuContainer">
+                    <ul class="flexUl">
+                      <div>
+                        <img src="./logo.png" alt="CanJet Logo">
+                        <a href="#" class="textMenu">Home</a>
+                        <a href="#" class="textMenu">Data</a>
+                      </div>
+                      <div><a href="#" class="textMenu">Contact Us</a></div>
+                    </ul>
+                  </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="main-nav-two"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="main-nav-two">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"menuContainer"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-between"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">"page"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Data<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Contact Us<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    </code>
+                </pre>
+
+
+
+
+          <br>
+          <h2 class="textHeading2" style="margin-top: 30px;">Side Menu</h2>
+
+          <p class="textBody">This is a side menu on the webpage. This style of menu is mainly used to switch between tabs.</p>
+
+          <div class="menuContainerSide">
+            
+            <ul>
+                <img src="./logo.png" alt="CanJet Logo">
+                <a href="#" class="textMenu">Home</a>
+                <a href="#" class="textMenu">Data</a>
+                <a href="#" class="textMenu">Contact Us</a>
+            </ul>
+          </div>
+                                      
+
+<div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="side-main-nav"
+    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+</div>
+<pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="side-main-nav">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"menuContainerSide"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Data<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"textMenu"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Contact Us<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    </code>
+                </pre>
+            </div>
+
+            <!-- TABS PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills" role="tabpanel" aria-labelledby="v-pills-tab">
+                <h1 class="textHeading1">
+                    Tabs
+                </h1>
+                <p class="bd-lead">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate
+                    a tabbed interface. Use them to
+                    create tabbable regions.</p>
+                <p class="intro">Dynamic tabbed interfaces, as described in the <a
+                        href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr
+                            title="Web Accessibility Initiative">WAI</abbr> <abbr
+                            title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices</a>, require
+                    <code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>, and additional
+                    <code>aria-</code> attributes in order to convey their structure, functionality and current state to
+                    users of
+                    assistive technologies (such as screen readers). As a best practice, we recommend using
+                    <code>&lt;button&gt;</code>
+                    elements for the tabs, as these are controls that trigger a dynamic change, rather than links that
+                    navigate to a new
+                    page or location.
+                </p>
+                <h2 class="textHeading2" id="active-items">Tabs<a class="anchorjs-link" aria-label="Anchor"
+                        href="#modifications" style="padding-left: 0.375em;"></a></h2>
+                <div class="my-3 bd-example">
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <p><strong>This is some placeholder content the Home tab's associated content.</strong></p>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><strong>This is some placeholder content the Profile tab's associated content.</strong>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <p><strong>This is some placeholder content the Contact tab's associated content.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="tabs"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="tabs">
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav nav-tabs"</span> <span class="na">id</span><span class="o">=</span><span class="s">"myTab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"contact-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#contact"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"contact"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"myTabContent"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"contact"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"contact-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    </code>
+                                </pre>
+                </div>
+                <h2 class="textHeading2" id="active-items">Pills<a class="anchorjs-link" aria-label="Anchor"
+                        href="#modifications" style="padding-left: 0.375em;"></a></h2>
+                <p class="intro">Same can be achieved with vertical tabs or pills.</p>
+                <div class="my-3 bd-example">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Home</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                                aria-selected="false">Profile</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                                aria-selected="false">Messages</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                                aria-selected="false">Settings</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <p><strong>This is some placeholder content the Home tab's associated content.</strong>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <p><strong>This is some placeholder content the Profile tab's associated
+                                        content.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <p><strong>This is some placeholder content the Messages tab's associated
+                                        content.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <p><strong>This is some placeholder content the Settings tab's associated
+                                        content.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="pills" class="btn-clipboard"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight code-container">
+                    <pre tabindex="0" class="chroma">
+    <code class="language-html" data-lang="html" data-id="pills">
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-start"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav flex-column nav-pills me-3"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span> <span class="na">aria-orientation</span><span class="o">=</span><span class="s">"vertical"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-messages"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-settings"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Settings<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tabContent"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    </code>
+                                </pre>
+                </div>
+            </div>
+
+            <!-- BUTTON PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
+                <h1 class="textHeading1">
+                    Buttons
+                </h1>
+                <p class="bd-lead">
+                    The <code>button</code> HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology.
+                    Once activated, it then performs a programmable action, such as submitting a form or opening a dialog.
+                </p>
+                <p class="intro">
+                    While <code>&lt;button&gt;</code> elements of type button are still perfectly valid HTML, 
+                    the newer <code>&lt;button&gt;</code> element is now the favored way to create buttons. By using <code></code> with <code>type="button"</code> and <code>class="button"</code>, you can create a new button. 
+                    Moreover, you can use different class after <code>class="button"</code> for your suitable situation.
+                    Given that a <code>&lt;button&gt;</code>'s label text is inserted between the opening and closing tags, 
+                    you can include HTML in the label, even images.
+                </p>
+                <!--Sample-->
+                <div class="container btn-sample-container">
+                    <h2 class="textHeading2" id="active-items">Sample</h2>
+                    <div class="group-button">
+                        <button type="button" class="button mr-2"> Default</button>
+                        <button type="button" class="button btn-important"> Important</button>
+                        <button type="button" class="button btn-action"> Primary Action</button>
+                        <button type="button" class="button btn-warning">Caution</button>
+                    </div>
+                    <br/>
+                </div>
+                <!--Code-->
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="button"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+                        <code class="language-html" data-lang="html" data-id="button">
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"group-button"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span><span class="na">class</span><span class="o">=</span><span class="s">"button mr-2"</span><span class="p">&gt;</span> Default<span class="p">&lt;</span><span class="nt">/button</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span>  <span class="na">class</span><span class="o">=</span><span class="s">"button btn-important"</span><span class="p">&gt;</span> Important<span class="p">&lt;</span><span class="nt">/button</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span>  <span class="na">class</span><span class="o">=</span><span class="s">"button btn-action"</span><span class="p">&gt;</span> Primary Action<span class="p">&lt;</span><span class="nt">/button</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span>  <span class="na">class</span><span class="o">=</span><span class="s">"button btn-warning"</span><span class="p">&gt;</span>Caution<span class="p">&lt;</span><span class="nt">/button</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">/div</span><span class="p">&gt;</span>
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <!-- SELECT PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-select" role="tabpanel" aria-labelledby="v-pills-select-tab">
+                <h1 class="textHeading1">
+                    Select
+                <h1>
+                    <p class="bd-lead">
+                        The <code>&lt;select&gt;</code> element is used to create a drop-down list.
+                        The <code>&lt;select&gt;</code> element is most often used in a form, to collect user input.
+                    </p>
+                    <p class="intro">
+                        Selects provide and consistent look and feel on different browsers and platforms by using <code>&lt;select&gt;</code> class and tags
+                    </p>
+                    <!-- Single select-->
+                    <h2 class="textHeading2" id="active-items">Single Select Option</h2>
+                    <div class="container select-sample-container">
+                        <div class="select">
+                            <Select>
+                                <option value="">Select option</option>
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                            </Select>
+                        </div>
+                    </div>
+                    <!--Code single select-->
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="single-select"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+                            <code class="language-html" data-lang="html" data-id="single-select">
+            <span class="p">&lt;</span><span class="nt">div</span><span class="na">class</span><span class="o">=</span><span class="s">"select"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">Select</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Select option<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 3<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 4<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">Select</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>    
+                            </code>
+                        </pre>
+                    </div>
+                    <!-- Information select option-->
+                    <h2 class="textHeading2" id="active-items">Infomation Select Option</h2>
+                    <p class="intro">
+                        Expands on default select to add images and/or a second line containing meta information, which allows users easier to choose their options.
+                        By using <code>&lt;optgroup &gt;</code> tag and you can add some <code>&lt;option&gt;</code> tag inside.
+                    </p>
+                    <div class="container select-sample-container">
+                        <div class="select info-select">
+                            <select>
+                                <option>Select option</option>
+                                <optgroup label="Type 1">
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                </optgroup>
+                                <optgroup label="Type 2">
+                                    <option value="">Option 3</option>
+                                    <option value="">Option 4</option>
+                                </optgroup>
+                                <optgroup label="Type 3">
+                                    <option value="">Option 5</option>
+                                    <option value="">Option 6</option>
+                            </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Code information select-->
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="info-select"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="info-select">
+            <span class="p">&lt;</span><span class="nt">div</span><span class="na">class</span><span class="o"></span><span class="s">"select info-select"</span> <span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">select</span> <span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="p">&gt;</span>Select option<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">optgroup</span><span class="na">label</span><span class="o"></span><span class="s">"Type 1"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">optgroup</span> <span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">optgroup</span><span class="na">label</span><span class="o"></span><span class="s">"Type 2"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 3<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 4<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">optgroup</span> <span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">optgroup</span><span class="na">label</span><span class="o"></span><span class="s">"Type 3"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 5<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 6<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">optgroup</span> <span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>       
+    </code>
+                        </pre>
+                    </div>
+                    <!-- Display select option when it has error-->
+                    <h2 class="textHeading2" id="active-items">Display error for select</h2>
+                    <p class="intro">
+                        If this selection box is required and it is not received any selected option, 
+                        the system will send an <code>error message </code> below the selection box. It reminds users to choose one of these options
+                    </p>
+                    <div class="container select-sample-container">
+                        <div class="select">
+                            <Select class="error">
+                                <option value="">Select option</option>
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                            </Select>
+                            <p class="error-msg">Please select one of these option!</p>
+                        </div>
+                    </div>
+                    <!--Code information select-->
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="error-select"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="error-select">
+        <span class="p">&lt;</span><span class="nt">div</span><span class="na">class</span><span class="o">=</span><span class="s">"select"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">"error"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Select option<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 3<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>Option 4<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"error-msg"</span><span class="p">&gt;</span>Please select one of these option!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>     
+    </code>
+                        </pre>
+                    </div>
+
+            </div>
+
+            <!-- LIST PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane p-4 fade" id="v-pills-list" role="tabpanel" aria-labelledby="v-pills-list-tab">
+                <h1 class="textHeading1">
+                    Lists
+                </h1>
+                <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content.
+                    Modify and
+                    extend them to support just about any content within.</p>
+                <h2 class="textHeading2" id="basic-example">Unordered list<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchor js-icon="#" href="#basic-example" style="padding-left: 0.375em;"></a></h2>
+                <div class="my-3 bd-example">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="1" class="btn-clipboard"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="1">
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>An item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A second item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A third item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A fourth item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>And a fifth one<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        </code>
+                        </pre>
+                </div>
+                <h2 class="textHeading2" id="numbered">Numbered list<a class="anchorjs-link " aria-label="Anchor"
+                        data-anchorjs-icon="#" href="#numbered" style="padding-left: 0.375em;"></a></h2>
+                <p class="intro">Add the <code>.list-group-numbered</code> modifier class to opt into numbered list
+                    group items.</p>
+                <div class="my-3 bd-example">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+                    </ol>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="2" class="btn-clipboard"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="2">
+            <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group list-group-numbered"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+        </code>
+                        </pre>
+                </div>
+                <h2 class="textHeading2" id="active-items">Modifications<a class="anchorjs-link" aria-label="Anchor"
+                        href="#modifications" style="padding-left: 0.375em;"></a></h2>
+                <p class="intro">Add <code>.li-active</code> to a <code>.list-group-item</code> to indicate the current
+                    active selection.</p>
+                <div class="my-3 bd-example">
+                    <ul class="list-group">
+                        <li class="list-group-item li-active" aria-current="true">An active item</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <div class="bd-clipboard"><button type="button" data-id="3" class="btn-clipboard"
+                            data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="3">
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item li-active"</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>An active item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    </code>
+                            </pre>
+                    </div>
+
+                    <p class="intro">Add <code>.disabled</code> to a <code>.list-group-item</code> to make it
+                        <em>appear</em> disabled. Note that some
+                        elements with <code>.disabled</code> will also require custom JavaScript to fully disable their
+                        click events (e.g.,
+                        links).
+                    </p>
+                    <div class="my-3 bd-example">
+                        <ul class="list-group">
+                            <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                        </ul>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" data-id="4" class="btn-clipboard"
+                            data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="4">
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item disabled"</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>A disabled item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    </code>
+                            </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIST PAGE-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+            <div class="tab-pane fade p-4" id="v-pills-images" role="tabpanel" aria-labelledby="v-pills-images-tab">
+                <h1 class="textHeading1">
+                    Images
+                </h1>
+                <h2 class="textHeading2">Banners</h2>
+                <p class="textBody" style="margin-top: 30px;">This is an image which is using the <span class="textBodyBold">full width</span> of the browser window. This is mostly used for <span class="textBodyBold">banners</span>.</p>
+            <img class="banner" src="./images/banner.jpg" alt="canjet plane">
+
+
+            <div class="highlight">
+                <div class="bd-clipboard"><button type="button" data-id="img-1" class="btn-clipboard"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+    <pre tabindex="0" class="chroma code-container">
+    <code class="language-html" data-lang="html" data-id="img-1">
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">"banner"</span> <span class="na">src</span><span class="o">=</span><span class="s">"./images/banner.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"canjet plane"</span><span class="p">&gt;</span>
+    </code>
+    </pre>
+            </div>
+            <h2 class="textHeading2">Left Aligned (Default) </h2>
+            <p class="textBody">This is a regular image aligned to the <span class="textBodyBold">left side</span> of the browser. This image does not require any positioning since they are aligned to the left side by default.</p>
+            <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Jet image">
+
+
+
+    <div class="highlight">
+        <div class="bd-clipboard"><button type="button" data-id="img-2" class="btn-clipboard"
+            data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+        </div>
+            <pre tabindex="0" class="chroma code-container">
+                <code class="language-html" data-lang="html" data-id="img-2">
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"</span><span class="na">alt</span><span class="o">=</span><span class="s">"Jet image"</span><span class="p">&gt;</span>
+                </code>
+            </pre>
+    </div>
+    <h2 class="textHeading2">Right Aligned</h2>
+
+            <p class="textBody" style="margin-top: 30px;">This is an image aligned to the <span class="textBodyBold">right side</span> of the browser using <span class="code">display: flex;</span>. It is important to wrap the image inside its own <span class="code">&lt;div&gt;</span> tag and apply the flex to the div itself.</p>
+            <div class="flexDivRight"><img src="https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" alt="Leather interior image"></div>
+            
+
+    <div class="bd-clipboard"><button type="button" data-id="img-3" class="btn-clipboard"
+        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+    </div>
+    <div class="highlight">
+            <pre tabindex="0" class="chroma code-container">
+                <code class="language-html" data-lang="html" data-id="img-3">
+        <span class="p">&lt;</span><span class="nt">div</span><span class="na"> class</span><span class="o">=</span><span class="s">"flexDivRight"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span><span class="na"> src</span><span class="o">=</span><span class="s">"https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Leather interior image"</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code>
+            </pre>
+    </div>
+
+    <h2 class="textHeading2">Center Aligned</h2>
+
+            <p class="textBody" style="margin-top: 30px;">This is an image aligned to the <span class="textBodyBold">center</span> of the browser using <span class="code">display: flex;</span>. Same principle applies to this, as in the example above.</p>
+            <div class="flexDivCenter"><img src="https://images.unsplash.com/photo-1566212775038-532d06eda485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="Sunset Jet image"></div>
+                        
+
+    <div class="bd-clipboard"><button type="button" data-id="img-4" class="btn-clipboard"
+        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+    </div>
+    <div class="highlight">
+        <pre tabindex="0" class="chroma code-container">
+                <code class="language-html" data-lang="html" data-id="img-4">
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"flexDivCenter"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://images.unsplash.com/photo-1566212775038-532d06eda485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80"</span><span class="na"> alt</span><span class="o">=</span><span class="s">"Sunset Jet image"</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                </code>
+        </pre>
+    </div>    
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let sidebarButton = document.querySelector('#sidebarCollapse'),
+                sidebar = document.querySelector('#sidebar'),
+                mainSpace = document.querySelector('#v-pills-tabContent');
+
+            sidebarButton.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+                mainSpace.classList.contains('col-md-10') ?
+                    mainSpace.classList.replace('col-md-10', 'col-12') && sidebar.classList.toggle('hidden') :
+                    mainSpace.classList.replace('col-12', 'col-md-10') && sidebar.classList.toggle('hidden');
+            });
+        });
+
+        function copyCodeToClipboard(element) {
+            let textToCopy = document.querySelector(`code[data-id="${element.dataset.id}"]`);
+            navigator.clipboard.writeText(textToCopy.textContent);
+        }
+    </script>
+
+</body>
+
+</html>
